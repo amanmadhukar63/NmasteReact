@@ -37,13 +37,17 @@
     border: none;
 }
 
+.search-bar:focus {
+    outline: none;
+}
+
 .search-res{
     height: 30px;
     width: 250px;
     border: 1px solid black;
     display: flex;
     justify-content: space-around;
-    border-radius: 25px;
+    border-radius: 15px;
     margin: 10px;
 }
 
@@ -71,6 +75,23 @@
 .restaurants{
     display: flex;
     flex-wrap: wrap;
+}
+
+.shimerCard {
+    /* background-color: rgb(255, 255, 255); */
+    animation-name: shimer;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shimer {
+    from {
+        background-color: rgb(255, 255, 255);
+    }
+    to {
+        background-color: rgb(230, 227, 227);
+    }
 }
 
 .res-card{
